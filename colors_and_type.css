@@ -50,7 +50,7 @@ body {
 /* --- Sales Page Headlines --- */
 h1, .h1 {
   font-family: var(--font-display);
-  font-weight: 800; /* Extra weight for digital impact */
+  font-weight: 600;
   font-size: var(--fs-3xl);
   line-height: 1.05;
   letter-spacing: -0.03em; /* Tighter tracking for modern look */
@@ -59,7 +59,7 @@ h1, .h1 {
 
 h2, .h2 {
   font-family: var(--font-display);
-  font-weight: 700;
+  font-weight: 500;
   font-size: var(--fs-2xl);
   letter-spacing: -0.02em;
 }
