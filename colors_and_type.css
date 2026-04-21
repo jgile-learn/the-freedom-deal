@@ -1,0 +1,99 @@
+/* ============================================================
+   THE FREEDOM DEAL — Digital Sales Page & Web
+   Sans-serif foundation. High-conversion hierarchy.
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Work+Sans:wght@500;600;700;800&family=JetBrains+Mono:wght@400&display=swap');
+
+:root {
+  /* ---------- COLORS (UNCHANGED) ---------- */
+  --paper-white:  #FFFFFF;
+  --cream:        #F6EFE3;
+  --ink:          #2E2B26;
+  --ink-soft:     #5B544A;
+  --sage:         #92AB7E;
+  --sage-deep:    #718A65;
+  --terracotta:   #DD8A64;
+  --terracotta-deep: #BF6A45;
+  --walnut:       #8A6A4A;
+  --rule:         #CFC3AC;
+
+  /* ---------- UPDATED TYPOGRAPHY ---------- */
+  --font-display:  'Work Sans', sans-serif; /* Architectural & Bold */
+  --font-body:     'Inter', sans-serif;     /* Clean & Highly Readable */
+  --font-hand:     'Caveat', cursive;       /* Human touch for callouts */
+  --font-mono:     'JetBrains Mono', monospace;
+
+  /* Web-optimized sizing */
+  --fs-base: 17px; /* Bumped for better readability */
+  --fs-xl:   32px;
+  --fs-2xl:  48px;
+  --fs-3xl:  64px;
+
+  --lh-tight: 1.1;
+  --lh-body:  1.6;
+}
+
+/* ============================================================
+   WEB-SPECIFIC ADJUSTMENTS
+   ============================================================ */
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--fs-base);
+  line-height: var(--lh-body);
+  color: var(--ink);
+  background-color: var(--paper-white);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* --- Sales Page Headlines --- */
+h1, .h1 {
+  font-family: var(--font-display);
+  font-weight: 800; /* Extra weight for digital impact */
+  font-size: var(--fs-3xl);
+  line-height: 1.05;
+  letter-spacing: -0.03em; /* Tighter tracking for modern look */
+  margin-bottom: var(--sp-6);
+}
+
+h2, .h2 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--fs-2xl);
+  letter-spacing: -0.02em;
+}
+
+/* --- The "Hero" Lede --- */
+.lede {
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  max-width: 45ch; /* Keeps eyes from getting tired on wide screens */
+}
+
+/* --- High-Conversion CTA Buttons --- */
+.btn {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  text-transform: none; /* Sentence case often feels more modern/trustworthy */
+  padding: 18px 36px;   /* Larger hit area for mobile thumbs */
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px); /* Subtle lift on hover */
+  box-shadow: var(--shadow-2);
+}
+
+/* --- The "Human" Touch --- */
+/* Use this for testimonials or "hand-written" margin notes */
+.hand-note {
+  font-family: var(--font-hand);
+  font-size: 1.4rem;
+  color: var(--terracotta);
+  transform: rotate(-2deg);
+  display: inline-block;
+}
